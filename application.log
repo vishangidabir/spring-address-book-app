@@ -1,0 +1,913 @@
+2022-10-11 15:12:15 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 12788 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 15:12:15 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 15:12:15 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 15:12:15 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 15:12:17 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 15:12:17 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 78 ms. Found 1 JPA repository interfaces.
+2022-10-11 15:12:19 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 15:12:19 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 15:12:19 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 15:12:19 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 15:12:19 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 3467 ms
+2022-10-11 15:12:19 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 15:12:19 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 15:12:20 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 15:12:20 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 15:12:21 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 15:12:21 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 15:12:23 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 15:12:23 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 15:12:24 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 15:12:25 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 15:12:25 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 15:12:25 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 15:12:25 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 11.336 seconds (JVM running for 14.316)
+2022-10-11 15:13:27 [INFO][http-nio-8080-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 15:13:27 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 15:13:27 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 166 ms
+2022-10-11 15:13:29 [WARN][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 15:13:29 [ERROR][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 15:13:29 [INFO][http-nio-8080-exec-2][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 15:13:29 [ERROR][http-nio-8080-exec-2][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.deleteById(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:45)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 15:20:56 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 15:20:56 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 15:20:56 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 15:21:17 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 14840 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 15:21:17 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 15:21:17 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 15:21:17 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 15:21:18 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 15:21:19 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 104 ms. Found 1 JPA repository interfaces.
+2022-10-11 15:21:20 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 15:21:20 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 15:21:20 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 15:21:21 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 15:21:21 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 3761 ms
+2022-10-11 15:21:21 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 15:21:21 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 15:21:21 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 15:21:22 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 15:21:22 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 15:21:22 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 15:21:24 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 15:21:24 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 15:21:25 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 15:21:25 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 15:21:25 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 15:21:26 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 15:21:26 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 9.85 seconds (JVM running for 11.879)
+2022-10-11 15:21:44 [INFO][http-nio-8080-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 15:21:44 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 15:21:44 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 5 ms
+2022-10-11 15:21:45 [WARN][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 15:21:45 [ERROR][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 15:21:45 [INFO][http-nio-8080-exec-2][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 15:21:45 [ERROR][http-nio-8080-exec-2][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.delete(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:46)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 17:01:59 [WARN][HikariPool-1 housekeeper][c.z.h.p.HikariPool:788] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h29m35s790ms854µs500ns).
+2022-10-11 17:11:28 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 17:11:28 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 17:11:28 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 17:11:44 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 12452 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 17:11:44 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 17:11:44 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 17:11:44 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 17:11:45 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 17:11:45 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 83 ms. Found 1 JPA repository interfaces.
+2022-10-11 17:11:47 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 17:11:47 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 17:11:47 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 17:11:47 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 17:11:47 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 3531 ms
+2022-10-11 17:11:48 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 17:11:48 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 17:11:48 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 17:11:49 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 17:11:50 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 17:11:50 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 17:11:52 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 17:11:52 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 17:11:53 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 17:11:54 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 17:11:54 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 17:11:54 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 17:11:54 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 11.694 seconds (JVM running for 13.932)
+2022-10-11 17:13:03 [INFO][http-nio-8080-exec-1][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 17:13:03 [INFO][http-nio-8080-exec-1][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 17:13:03 [INFO][http-nio-8080-exec-1][o.s.w.s.DispatcherServlet:547] Completed initialization in 18 ms
+2022-10-11 17:13:04 [WARN][http-nio-8080-exec-1][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 17:13:04 [ERROR][http-nio-8080-exec-1][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 17:13:04 [INFO][http-nio-8080-exec-1][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 17:13:04 [ERROR][http-nio-8080-exec-1][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.delete(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:46)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 17:21:54 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 17:21:55 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 17:21:55 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 17:22:17 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 11028 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 17:22:17 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 17:22:17 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 17:22:17 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 17:22:19 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 17:22:19 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 106 ms. Found 1 JPA repository interfaces.
+2022-10-11 17:22:21 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 17:22:21 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 17:22:21 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 17:22:21 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 17:22:21 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 3812 ms
+2022-10-11 17:22:21 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 17:22:21 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 17:22:22 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 17:22:22 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 17:22:23 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 17:22:23 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 17:22:25 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 17:22:25 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 17:22:26 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 17:22:26 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 17:22:26 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 17:22:27 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 17:22:27 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 11.047 seconds (JVM running for 14.249)
+2022-10-11 17:22:41 [INFO][http-nio-8080-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 17:22:41 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 17:22:41 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 8 ms
+2022-10-11 17:22:41 [WARN][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 17:22:41 [ERROR][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 17:22:41 [INFO][http-nio-8080-exec-2][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 17:22:41 [ERROR][http-nio-8080-exec-2][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.delete(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:46)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 17:22:59 [WARN][http-nio-8080-exec-4][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 17:22:59 [ERROR][http-nio-8080-exec-4][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 17:22:59 [INFO][http-nio-8080-exec-4][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 17:22:59 [ERROR][http-nio-8080-exec-4][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.delete(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:46)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 18:03:02 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 18:03:02 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 18:03:02 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 18:03:24 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 20620 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 18:03:24 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 18:03:24 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 18:03:24 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 18:03:27 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 18:03:27 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 136 ms. Found 1 JPA repository interfaces.
+2022-10-11 18:03:28 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 18:03:28 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 18:03:28 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 18:03:29 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 18:03:29 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 4860 ms
+2022-10-11 18:03:29 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 18:03:29 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 18:03:29 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 18:03:29 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 18:03:30 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 18:03:30 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 18:03:32 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 18:03:32 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 18:03:32 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 18:03:33 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 18:03:33 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 18:03:33 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 18:03:33 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 10.36 seconds (JVM running for 12.381)
+2022-10-11 18:03:43 [INFO][http-nio-8080-exec-1][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 18:03:43 [INFO][http-nio-8080-exec-1][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 18:03:43 [INFO][http-nio-8080-exec-1][o.s.w.s.DispatcherServlet:547] Completed initialization in 2 ms
+2022-10-11 18:03:44 [WARN][http-nio-8080-exec-1][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 18:03:44 [ERROR][http-nio-8080-exec-1][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 18:03:44 [INFO][http-nio-8080-exec-1][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 18:03:44 [ERROR][http-nio-8080-exec-1][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.deleteById(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:45)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 18:10:28 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 18:10:29 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 18:10:29 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 18:10:43 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 9608 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 18:10:43 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 18:10:43 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 18:10:43 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 18:10:45 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 18:10:45 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 94 ms. Found 1 JPA repository interfaces.
+2022-10-11 18:10:47 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 18:10:47 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 18:10:47 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 18:10:47 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 18:10:47 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 3460 ms
+2022-10-11 18:10:47 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 18:10:47 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 18:10:48 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 18:10:48 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 18:10:49 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 18:10:49 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 18:10:50 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 18:10:50 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 18:10:51 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 18:10:51 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 18:10:51 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 18:10:51 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 18:10:51 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 9.099 seconds (JVM running for 12.14)
+2022-10-11 18:16:26 [INFO][http-nio-8080-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 18:16:26 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 18:16:27 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 138 ms
+2022-10-11 18:16:28 [WARN][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:137] SQL Error: 1451, SQLState: 23000
+2022-10-11 18:16:28 [ERROR][http-nio-8080-exec-2][o.h.e.j.s.SqlExceptionHelper:142] Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+2022-10-11 18:16:28 [INFO][http-nio-8080-exec-2][o.h.e.j.b.i.AbstractBatchImpl:213] HHH000010: On release of batch it still contained JDBC statements
+2022-10-11 18:16:28 [ERROR][http-nio-8080-exec-2][o.a.c.c.C.[.[.[.[dispatcherServlet]:175] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DataIntegrityViolationException: could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement] with root cause
+java.sql.SQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`address_book`.`address_book`, CONSTRAINT `FK52vvk58aq0p1wscf3j28elx4f` FOREIGN KEY (`id`) REFERENCES `address_book_data` (`id`))
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:916)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1061)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1009)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1320)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:994)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:197)
+	at org.hibernate.engine.jdbc.batch.internal.NonBatchingBatch.addToBatch(NonBatchingBatch.java:46)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3698)
+	at org.hibernate.persister.entity.AbstractEntityPersister.delete(AbstractEntityPersister.java:3958)
+	at org.hibernate.action.internal.EntityDeleteAction.execute(EntityDeleteAction.java:123)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:604)
+	at org.hibernate.engine.spi.ActionQueue.lambda$executeActions$1(ActionQueue.java:478)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721)
+	at org.hibernate.engine.spi.ActionQueue.executeActions(ActionQueue.java:475)
+	at org.hibernate.event.internal.AbstractFlushingEventListener.performExecutions(AbstractFlushingEventListener.java:344)
+	at org.hibernate.event.internal.DefaultFlushEventListener.onFlush(DefaultFlushEventListener.java:40)
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:107)
+	at org.hibernate.internal.SessionImpl.doFlush(SessionImpl.java:1407)
+	at org.hibernate.internal.SessionImpl.managedFlush(SessionImpl.java:489)
+	at org.hibernate.internal.SessionImpl.flushBeforeTransactionCompletion(SessionImpl.java:3290)
+	at org.hibernate.internal.SessionImpl.beforeTransactionCompletion(SessionImpl.java:2425)
+	at org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.beforeTransactionCompletion(JdbcCoordinatorImpl.java:449)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.beforeCompletionCallback(JdbcResourceLocalTransactionCoordinatorImpl.java:183)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.access$300(JdbcResourceLocalTransactionCoordinatorImpl.java:40)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit(JdbcResourceLocalTransactionCoordinatorImpl.java:281)
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:101)
+	at org.springframework.orm.jpa.JpaTransactionManager.doCommit(JpaTransactionManager.java:562)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit(AbstractPlatformTransactionManager.java:743)
+	at org.springframework.transaction.support.AbstractPlatformTransactionManager.commit(AbstractPlatformTransactionManager.java:711)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning(TransactionAspectSupport.java:654)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:407)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:174)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215)
+	at jdk.proxy3/jdk.proxy3.$Proxy108.deleteById(Unknown Source)
+	at com.example.addressbookapp.service.AddressBookService.deleteAddressBookData(AddressBookService.java:45)
+	at com.example.addressbookapp.controller.AddressBookController.deleteAddressBook(AddressBookController.java:50)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1070)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doDelete(FrameworkServlet.java:931)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:890)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-10-11 19:54:35 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 19:54:35 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 19:54:36 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
+2022-10-11 19:54:56 [INFO][restartedMain][c.e.a.AddressBookAppApplication:55] Starting AddressBookAppApplication using Java 18.0.1.1 on DESKTOP-7H8U3U3 with PID 6624 (G:\vishangi\Felloship Program\Spring boot\AddressBookApp\target\classes started by Jitesh in G:\vishangi\Felloship Program\Spring boot\AddressBookApp)
+2022-10-11 19:54:56 [INFO][restartedMain][c.e.a.AddressBookAppApplication:640] The following 1 profile is active: "dev"
+2022-10-11 19:54:57 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-10-11 19:54:57 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-10-11 19:54:59 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-10-11 19:54:59 [INFO][restartedMain][o.s.d.r.c.RepositoryConfigurationDelegate:201] Finished Spring Data repository scanning in 100 ms. Found 1 JPA repository interfaces.
+2022-10-11 19:55:00 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-10-11 19:55:00 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-10-11 19:55:00 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-10-11 19:55:01 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-10-11 19:55:01 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 4098 ms
+2022-10-11 19:55:01 [INFO][restartedMain][o.h.j.i.u.LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-10-11 19:55:01 [INFO][restartedMain][o.h.Version:44] HHH000412: Hibernate ORM core version 5.6.10.Final
+2022-10-11 19:55:02 [INFO][restartedMain][o.h.a.c.Version:56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-10-11 19:55:02 [INFO][restartedMain][c.z.h.HikariDataSource:110] HikariPool-1 - Starting...
+2022-10-11 19:55:04 [INFO][restartedMain][c.z.h.HikariDataSource:123] HikariPool-1 - Start completed.
+2022-10-11 19:55:04 [INFO][restartedMain][o.h.d.Dialect:175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2022-10-11 19:55:07 [INFO][restartedMain][o.h.e.t.j.p.i.JtaPlatformInitiator:52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-10-11 19:55:07 [INFO][restartedMain][o.s.o.j.LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 19:55:07 [WARN][restartedMain][o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration:219] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-10-11 19:55:08 [WARN][restartedMain][o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration:103] Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2022-10-11 19:55:08 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+2022-10-11 19:55:08 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
+2022-10-11 19:55:08 [INFO][restartedMain][c.e.a.AddressBookAppApplication:61] Started AddressBookAppApplication in 13.091 seconds (JVM running for 16.026)
+2022-10-11 19:55:22 [INFO][http-nio-8080-exec-2][o.a.c.c.C.[.[.[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-10-11 19:55:22 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:525] Initializing Servlet 'dispatcherServlet'
+2022-10-11 19:55:22 [INFO][http-nio-8080-exec-2][o.s.w.s.DispatcherServlet:547] Completed initialization in 3 ms
+2022-10-11 19:55:22 [WARN][http-nio-8080-exec-2][o.s.w.s.m.s.DefaultHandlerExceptionResolver:208] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`); nested exception is com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize value of type `java.lang.String` from Array value (token `JsonToken.START_ARRAY`)<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 20] (through reference chain: com.example.addressbookapp.dto.AddressBookDTO["phoneNumber"])]
+2022-10-11 19:57:27 [WARN][http-nio-8080-exec-9][o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver:208] Resolved [com.example.addressbookapp.exception.CustomException: Address Book is Empty!]
+2022-10-11 20:43:27 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-11 20:43:27 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-11 20:43:27 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
